@@ -11,7 +11,7 @@ const ServiceROICalculator = () => {
 			prefix: '$',
 			suffix: '',
 			question:
-				'What is the average cost per click for keywords relating to your business?',
+				'Average cost per click for keywords relating to your services?',
 		},
 		{
 			name: 'adSpend',
@@ -21,7 +21,7 @@ const ServiceROICalculator = () => {
 			step: '10',
 			prefix: '$',
 			suffix: '',
-			question: 'How much do you intend to spend on your ad campaign?',
+			question: 'Amount intended to be invested into Google Ads?',
 		},
 		{
 			name: 'conversionRate',
@@ -31,8 +31,7 @@ const ServiceROICalculator = () => {
 			step: '0.5',
 			prefix: '%',
 			suffix: '',
-			question:
-				'What is the conversion rate (CVR) of visitors to your website that become leads?',
+			question: 'Conversion Rate of website visitors to leads (in percentage)?',
 		},
 		{
 			name: 'closeRate',
@@ -42,7 +41,7 @@ const ServiceROICalculator = () => {
 			step: '1',
 			prefix: '%',
 			suffix: '',
-			question: 'How many of your leads turn into customers?',
+			question: 'Sales Close Rate - how many leads become customers?',
 		},
 		{
 			name: 'avgCustomerValue',
@@ -52,7 +51,7 @@ const ServiceROICalculator = () => {
 			step: '10',
 			prefix: '$',
 			suffix: '',
-			question: 'On average, how much is each customer worth to your business?',
+			question: 'What is the lifetime value of each closed customer/client?',
 		},
 		{
 			name: 'avgProfitMargin',
@@ -62,7 +61,7 @@ const ServiceROICalculator = () => {
 			step: '1',
 			prefix: '%',
 			suffix: '',
-			question: 'What percentage of each sale is profit?',
+			question: 'What is your profit (margin)?',
 		},
 	];
 
@@ -77,7 +76,7 @@ const ServiceROICalculator = () => {
 
 	return (
 		<ROICalculatorBase
-			title='ROI for Service-Based Businesses'
+			title='ROI Calculator for Service Providers'
 			fieldConfig={fieldConfig}
 			initialInputs={initialInputs}
 		/>

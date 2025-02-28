@@ -29,7 +29,7 @@ const CalculatorResults = ({ results }) => {
 				<div className='flex justify-between border-b border-gray-700 pb-2'>
 					<span>Profit:</span> <span>${results.profit}</span>
 				</div>
-				<div className='flex justify-between text-xl font-bold border-t border-gray-700 pt-2'>
+				<div>
 					<span>Monthly ROI</span> <span>{results.roi}</span>
 				</div>
 			</div>

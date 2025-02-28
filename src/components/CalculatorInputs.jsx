@@ -1,3 +1,5 @@
+import React from 'react';
+
 const CalculatorInputs = ({ fields, handleChange, inputs }) => {
 	return (
 		<div className='flex flex-col gap-4 w-full'>
