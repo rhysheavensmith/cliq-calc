@@ -29,8 +29,8 @@ const ROICalculatorBase = ({ title, fieldConfig, initialInputs }) => {
 		let parsedValue = parseFloat(value);
 
 		if (constraints[name]) {
-			const { min, max } = constraints[name];
-			parsedValue = Math.min(Math.max(parsedValue || 0, min), max);
+			const { max } = constraints[name];
+			parsedValue = Math.min(parsedValue || 0, max);
 		}
 
 		const updatedInputs = { ...inputs, [name]: parsedValue };
